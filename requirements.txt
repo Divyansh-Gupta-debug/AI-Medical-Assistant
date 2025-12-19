@@ -1,0 +1,9 @@
+streamlit
+pymongo
+numpy
+requests
+sounddevice
+deep-translator
+fpdf
+spacy
+python-dotenv
