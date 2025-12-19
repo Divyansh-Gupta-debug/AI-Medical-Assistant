@@ -8,8 +8,8 @@ from bson.binary import STANDARD
 from src.chatbot import run_chatbot
 
 # MongoDB Connection Setup
-db_user = "admin"
-db_password = "admin"
+db_user = os.getenv("DB_USER")
+db_password = os.getenv("DB_PASSWORD")
 uri = f"mongodb+srv://{db_user}:{db_password}@patient.68p05.mongodb.net/?retryWrites=true&w=majority&appName=Patient"
 client = MongoClient(uri)
 
